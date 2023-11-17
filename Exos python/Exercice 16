@@ -1,0 +1,22 @@
+# Créer un jeu de 52 cartes, puis:
+#– Mélanger le jeu aléatoirement.
+#– Piocher la première carte.
+#– Parcourir le jeu jusqu’à trouver une carte de même valeur.
+# – Retenez le nombre de cartes qu’il a fallu parcourir pour tomber sur la première paire.
+#– Exécutez 1000 fois cette opération  et calculez la moyenne de cartes à parcourir.
+
+import random 
+
+valeurs = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Valet', 'Dame', 'Roi']
+symboles = ['Coeur','Carreau','Trèfle','Pique']
+
+jeu = [(valeur,symbole) for valeur in valeurs for symbole in symboles]
+
+random.shuffle(jeu)
+
+premiere = jeu[0]
+
+for carte in jeu[1:] :
+    if carte[0] == premiere[0] :
+        print(carte)
+        break

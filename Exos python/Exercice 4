@@ -1,0 +1,8 @@
+#Écrire un code qui intervertit le contenu de deux variables
+
+var1 = 'a'
+var2 = 'b'
+
+def inv(var1, var2) :
+    (var1, var2) = (var2, var1)
+    return (var1, var2)

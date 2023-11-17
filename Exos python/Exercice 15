@@ -1,0 +1,14 @@
+#Améliorer la fonction de calcul d’âge en lui faisant calculer l’âge en années, mois et jours.
+
+from datetime import datetime 
+
+def age(date):
+    date_format = "%Y-%m-%d"
+    date_naissance = datetime.strptime(date, date_format)
+    aujrd = datetime.now()
+    diff = aujrd - date_naissance
+
+    ans = diff.days // 365
+    mois = (diff.days % 365) // 30
+    jours = (diff.days % 365) % 30
+    return(ans, mois, jours)

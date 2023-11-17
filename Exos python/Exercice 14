@@ -1,0 +1,8 @@
+# Écrire une fonction qui prend en paramètre la date de naissance d’une personne et qui calcule son âge en années.
+import datetime, date
+
+
+def age(jour,moix,année):
+    age = 2023 - année
+    return age
+

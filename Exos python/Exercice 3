@@ -1,0 +1,4 @@
+#Écrire un code qui affiche les 3 derniers caractères d’une chaîne de caractère
+
+def trois_derniers(mot):
+    return mot[-3:]

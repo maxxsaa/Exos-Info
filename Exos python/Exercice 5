@@ -1,0 +1,7 @@
+#Écrire un code qui calcule le nombre de cuillères à soupe qu’il faut pour avoir X grammes de
+# sucre, X étant une variable. Le programme doit afficher au final le texte suivant: 
+#« Pour x grammes de sucre, il faut y cuillères à soupe».
+
+def cui(x):
+    y = x/15
+    return 'Pour x grammes de sucre, il faut '+ str(y) + 'cuillères à soupe.'

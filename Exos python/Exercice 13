@@ -1,0 +1,17 @@
+# Écrire une fonction qui calcule l’amende relative à un excès de vitesse. La fonction prendra deux paramètres: la vitesse maximale et
+# la vitesse constatée. Les tarifs sont les suivants:
+#– Dépassement de 0 à 10 km/h: € 53
+#– Dépassement > 10km/h: € 53 + € 6 par km au dessus de 10 km/h
+# – Dépassement > 40km/h: un nombre aléatoire entre € 80 et € 4.000
+import random
+
+def amende(x, max):
+    if 1 < (x - max) < 11 :
+        return "53 d'amende"
+    elif 10 < (x - max) < 40 :
+        sup = (x - max) - 10
+        return (53 + sup*6)
+    elif (x - max) > 40 :
+        return random.randint(80, 4000)
+    else:
+        return "pas d'amende"

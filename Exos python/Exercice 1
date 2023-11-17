@@ -1,0 +1,6 @@
+# Écrire un code qui calcule l’indice de masse corporelle d’une personne (IMC = poids /taille2)
+
+def imc(poids,taille):
+    return(poids/taille**2)
+
+print(imc(5,4))

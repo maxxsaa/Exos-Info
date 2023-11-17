@@ -1,0 +1,19 @@
+#Écrire un code qui écrit tous les entiers de 0 jusqu'à un nombre passé en paramètre.
+
+def fonc(n):
+    for i in range(n) :
+        print(i)
+        
+
+# Écrire un code qui trouve le nombre le plus petit dans une liste de nombres.
+
+liste_nombre = [2,3,4,5,18,1]
+nombre_min = min(liste_nombre)
+print(nombre_min)
+
+# Écrire un code qui retourne les éléments communs à deux listes de nombres entiers.
+
+liste1 = [2,3,4,5,18,1]
+liste2 = [5,3,2,5,15,1]
+com = list(set(liste1) & set(liste2))
+print(com)

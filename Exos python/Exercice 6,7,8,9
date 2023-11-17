@@ -1,0 +1,26 @@
+#Écrire un code qui crée une liste avec 3 éléments entiers représentant une note d’examen sur 20
+
+note1 = 15
+note2 = 12
+note3 = 8
+
+liste = [note1, note2, note3]
+
+# Ajouter une quatrième note
+
+note4 = 10
+liste.append(note4)
+
+# Ajouter 1 point à la deuxième note
+
+liste[1] += 1
+
+
+# Calculer la moyenne des 4 notes
+
+def moy(liste):
+    tot = 0
+    for i in liste : 
+        tot += i
+    moy = tot/len(liste)
+    return moy
